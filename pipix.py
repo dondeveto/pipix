@@ -117,6 +117,7 @@ def work(num):
 ########################################################################################
 def list():
     choice = [4,9,12]
+    choice2 = [1,2,3,5,6,7,8,10,11,13,14,15,16,17,18,19]
     while True:
         num = int(input("\033[1;36m Select Number  :"))
         if num in choice:            
@@ -151,6 +152,11 @@ def list():
                 print("Invalid operation")
                 input("press Enter to continue.....")
                 mainpage()
+        elif num in choice2:
+            work(num)
+
         else:
-            work(num) 
+            print("Invalid operation")
+            input("press Enter to continue.....")
+            mainpage()
 list()
